@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlantCare Hub helps beginners choose houseplants, learn simple care routines, and troubleshoot common plant problems.">
+  <meta name="theme-color" content="#f7f7ef">
+  <title>PlantCare Hub — Grow a little greener</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Small steps. Happier plants. A greener home. <span class="announcement-link">Your plant journey starts here <span aria-hidden="true">↗</span></span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="PlantCare Hub home">
+      <span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36V18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M22 24C10 24 6 16 7 7c10 0 17 5 15 17Z" fill="currentColor"/><path d="M23 18C22 8 30 4 38 5c1 10-5 17-15 18Z" fill="currentColor"/><path d="M12 37h20l-2 4H14Z" fill="currentColor"/></svg></span>
+      <span class="brand-name">plantcare<span>hub</span><small>GROW WITH CONFIDENCE</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-active" href="#home">Home</a>
+      <a href="#finder">Find a plant</a>
+      <a href="#guides">Care guides</a>
+      <a href="#diagnosis">Plant problems</a>
+      <a href="#planner">Care planner</a>
+    </nav>
+    <a class="header-cta" href="#finder">Find your plant <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-icon">✳</span> YOUR FRIENDLY PLANT COMPANION</div>
+        <h1>A little green<br>goes a <em>long way.</em></h1>
+        <p class="hero-lead">Growing your first plant should feel exciting, not overwhelming. Get simple advice, find the right plant for your space, and learn as you grow.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#finder">Find my first plant <span>↗</span></a>
+          <a class="text-link" href="#guides">Explore care guides <span>→</span></a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack" aria-hidden="true"><span>🌿</span><span>🪴</span><span>🍃</span></div>
+          <div><strong>Made for first-time plant parents</strong><small>Clear advice. No green thumb required.</small></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo" role="img" aria-label="Sunlit home with lush indoor plants"></div>
+        <div class="photo-label"><span class="label-icon">✦</span><span><strong>Make room to grow</strong><small>Better plant care, one day at a time</small></span></div>
+        <div class="floating-note note-top"><span class="note-icon">☼</span><span><strong>Find their happy place</strong><small>Light matters more than you think</small></span></div>
+        <div class="floating-note note-bottom"><span class="note-leaf">↗</span><span><strong>Start simple</strong><small>Small habits make healthy plants</small></span></div>
+        <span class="hero-spark spark-one">✳</span><span class="hero-spark spark-two">✦</span>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div class="trust-item"><span>✳</span><div><strong>Beginner friendly</strong><small>Advice without the jargon</small></div></div>
+      <div class="trust-item"><span>⌁</span><div><strong>Made for real homes</strong><small>Work with the space you have</small></div></div>
+      <div class="trust-item"><span>♡</span><div><strong>Grow at your pace</strong><small>Progress over perfection</small></div></div>
+    </section>
+
+    <section class="section-wrap finder-section" id="finder">
+      <div class="section-heading">
+        <div><div class="eyebrow">LET'S FIND YOUR MATCH</div><h2>Your space. Your pace.<br><em>Your kind of plant.</em></h2></div>
+        <p>Not sure where to start? Tell us a little about your home and habits. We'll suggest a few easygoing plants to explore.</p>
+      </div>
+      <div class="finder-panel">
+        <div class="finder-form">
+          <div class="form-step"><span>01</span><label for="light">How much natural light do you get?</label></div>
+          <div class="choice-grid" id="light-choices">
+            <button class="choice selected" data-group="light" data-value="low"><span class="choice-icon">◐</span><strong>Low light</strong><small>A little daylight</small></button>
+            <button class="choice" data-group="light" data-value="medium"><span class="choice-icon">☼</span><strong>Bright indirect</strong><small>Near a bright window</small></button>
+            <button class="choice" data-group="light" data-value="high"><span class="choice-icon">☀</span><strong>Lots of light</strong><small>Sun-filled space</small></button>
+          </div>
+          <div class="form-step second-step"><span>02</span><label>How much time can you give your plant?</label></div>
+          <div class="choice-grid time-grid" id="time-choices">
+            <button class="choice selected" data-group="time" data-value="little"><span class="choice-icon">◷</span><strong>Keep it easy</strong><small>Low maintenance</small></button>
+            <button class="choice" data-group="time" data-value="some"><span class="choice-icon">♡</span><strong>Happy to learn</strong><small>A little routine is fine</small></button>
+          </div>
+          <button class="button button-dark finder-submit" id="find-match">Show my plant matches <span>↗</span></button>
+        </div>
+        <aside class="finder-result" id="finder-result" aria-live="polite">
+          <div class="result-top"><span class="result-kicker">YOUR STARTER MATCH</span><span class="result-spark">✳</span></div>
+          <div class="result-plant-image snake-image" id="result-image" role="img" aria-label="Snake plant in a pot"></div>
+          <div class="result-content"><span class="match-tag">A GREAT PLACE TO START</span><h3 id="result-name">Snake Plant</h3><p id="result-description">Architectural leaves, an easygoing nature, and no need to water on a strict schedule.</p><div class="result-meta"><span>◐ Low to bright indirect light</span><span>⌁ Let soil dry between watering</span></div><a class="text-link" href="#plant-profiles">Explore plant profiles <span>→</span></a></div>
+        </aside>
+      </div>
+      <p class="fine-print">Plant suggestions are starting points. Light, temperature, pot size, and growing conditions all affect care needs.</p>
+    </section>
+
+    <section class="green-band" id="guides">
+      <div class="section-wrap green-band-inner">
+        <div class="green-copy"><div class="eyebrow eyebrow-light">THE BASICS, MADE SIMPLE</div><h2>Good plant care<br>isn't complicated.</h2><p>A few small habits can make all the difference. Start with the essentials, then build your confidence leaf by leaf.</p><a href="#care-library" class="button button-light">Browse all care guides <span>↗</span></a></div>
+        <div class="basics-grid">
+          <a class="basic-card" href="#watering"><span class="basic-number">01 / WATER</span><span class="basic-illustration water-ill">◉</span><h3>Water with intention</h3><p>Learn when to water by checking the soil—not the calendar.</p><span class="card-arrow">↗</span></a>
+          <a class="basic-card" href="#light-guide"><span class="basic-number">02 / LIGHT</span><span class="basic-illustration light-ill">☼</span><h3>Find the right light</h3><p>Understand your room's light and find a spot your plant loves.</p><span class="card-arrow">↗</span></a>
+          <a class="basic-card" href="#plant-profiles"><span class="basic-number">03 / ROUTINE</span><span class="basic-illustration routine-ill">✳</span><h3>Build tiny habits</h3><p>Simple check-ins help you notice what your plant needs.</p><span class="card-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap diagnosis-section" id="diagnosis">
+      <div class="diagnosis-image" role="img" aria-label="Close-up of a green plant leaf"></div>
+      <div class="diagnosis-copy">
+        <div class="eyebrow">A LITTLE HELP FOR YOUR LEAFY FRIEND</div>
+        <h2>Something look<br><em>a little off?</em></h2>
+        <p>Yellow leaves? Droopy stems? Brown tips? Don't panic. A plant's appearance can offer clues about its growing conditions.</p>
+        <div class="symptom-list">
+          <button class="symptom" data-symptom="yellow"><span class="symptom-icon yellow">◉</span><span><strong>Yellowing leaves</strong><small>Explore possible causes and what to check.</small></span><span class="symptom-arrow">↗</span></button>
+          <button class="symptom" data-symptom="droop"><span class="symptom-icon droop">⌁</span><span><strong>Drooping or wilting</strong><small>Check moisture, light, and recent changes.</small></span><span class="symptom-arrow">↗</span></button>
+          <button class="symptom" data-symptom="brown"><span class="symptom-icon brown">✳</span><span><strong>Brown leaf tips</strong><small>Look at watering, humidity, and buildup.</small></span><span class="symptom-arrow">↗</span></button>
+        </div>
+        <div class="diagnosis-answer" id="diagnosis-answer" aria-live="polite"><strong>Start with a quick check.</strong><p>Select a symptom above to see a few possible causes and safe next steps. These suggestions are educational, not a definitive diagnosis.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap plant-section" id="plant-profiles">
+      <div class="section-heading">
+        <div><div class="eyebrow">MEET YOUR NEW GREEN ROOMMATES</div><h2>Easy plants. <em>Good beginnings.</em></h2></div>
+        <a class="text-link" href="#care-library">See all plant profiles <span>→</span></a>
+      </div>
+      <div class="plant-grid">
+        <article class="plant-card"><div class="plant-photo plant-snake"><span class="plant-level">EASYGOING</span><button class="save-plant" aria-label="Save Snake Plant" data-plant="Snake Plant">♡</button></div><div class="plant-card-body"><div class="plant-family">SANSEVIERIA</div><h3>Snake Plant</h3><p>Upright, sculptural leaves and a forgiving routine.</p><div class="plant-facts"><span>◐ Indirect light</span><span>⌁ Let soil dry</span></div><a href="#snake-guide" class="text-link">Get to know it <span>→</span></a></div></article>
+        <article class="plant-card"><div class="plant-photo plant-pothos"><span class="plant-level">EASYGOING</span><button class="save-plant" aria-label="Save Golden Pothos" data-plant="Golden Pothos">♡</button></div><div class="plant-card-body"><div class="plant-family">EPIPREMNUM AUREUM</div><h3>Golden Pothos</h3><p>A trailing favourite that brings a soft, leafy feel.</p><div class="plant-facts"><span>☼ Indirect light</span><span>⌁ Check soil first</span></div><a href="#pothos-guide" class="text-link">Get to know it <span>→</span></a></div></article>
+        <article class="plant-card"><div class="plant-photo plant-zz"><span class="plant-level">LOW FUSS</span><button class="save-plant" aria-label="Save ZZ Plant" data-plant="ZZ Plant">♡</button></div><div class="plant-card-body"><div class="plant-family">ZAMIOCULCAS</div><h3>ZZ Plant</h3><p>Glossy leaves and a preference for drying out.</p><div class="plant-facts"><span>◐ Low to indirect</span><span>⌁ Infrequent checks</span></div><a href="#zz-guide" class="text-link">Get to know it <span>→</span></a></div></article>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="section-wrap planner-inner">
+        <div class="planner-copy"><div class="eyebrow">A GENTLE NUDGE, NOT A STRICT SCHEDULE</div><h2>Your plant-care<br><em>reset.</em></h2><p>Take a minute to check in with your plants. Mark off what you've done and build a routine that works for you.</p><div class="planner-note"><span>✦</span> Remember: check the soil before you water. Every plant is different.</div></div>
+        <div class="planner-card">
+          <div class="planner-card-top"><div><span class="today-label">YOUR CARE CHECKLIST</span><h3>A little check-in</h3></div><span class="date-pill">MY ROUTINE</span></div>
+          <div class="progress-row"><span id="progress-label">0 of 4 complete</span><span id="progress-percent">0%</span></div><div class="progress-track"><span id="progress-bar"></span></div>
+          <div class="task-list">
+            <label class="task"><input type="checkbox"><span class="custom-check">✓</span><span><strong>Check the soil</strong><small>Feel the top layer before deciding to water.</small></span><span class="task-icon">⌁</span></label>
+            <label class="task"><input type="checkbox"><span class="custom-check">✓</span><span><strong>Look over the leaves</strong><small>Notice new growth, spots, or pests.</small></span><span class="task-icon">✳</span></label>
+            <label class="task"><input type="checkbox"><span class="custom-check">✓</span><span><strong>Check the light</strong><small>Make sure your plant gets suitable light.</small></span><span class="task-icon">☼</span></label>
+            <label class="task"><input type="checkbox"><span class="custom-check">✓</span><span><strong>Tidy the space</strong><small>Remove fallen leaves and clear the saucer.</small></span><span class="task-icon">♡</span></label>
+          </div>
+          <button class="reset-tasks" id="reset-tasks">Reset checklist ↺</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap library-section" id="care-library">
+      <div class="section-heading"><div><div class="eyebrow">THE PLANTCARE LIBRARY</div><h2>Curious today? <em>Start here.</em></h2></div><p>Short, practical guides to help you learn the essentials and feel more at home with your plants.</p></div>
+      <div class="article-grid">
+        <a class="article-card" href="#watering" id="watering"><div class="article-photo article-water"></div><div class="article-meta"><span>CARE BASICS</span><span>5 MIN READ</span></div><h3>How to water indoor plants without overdoing it</h3><p>Learn the soil-first approach to watering with more confidence.</p><span class="article-link">Read the guide ↗</span></a>
+        <a class="article-card" href="#light-guide" id="light-guide"><div class="article-photo article-light"></div><div class="article-meta"><span>LIGHT & LOCATION</span><span>4 MIN READ</span></div><h3>Finding the right light in your home</h3><p>A beginner's guide to low, medium, and bright indirect light.</p><span class="article-link">Read the guide ↗</span></a>
+        <a class="article-card" href="#seasonal-guide" id="seasonal-guide"><div class="article-photo article-season"></div><div class="article-meta"><span>SEASONAL CARE</span><span>6 MIN READ</span></div><h3>Adjusting plant care through the seasons</h3><p>Understand why your plant's needs can change throughout the year.</p><span class="article-link">Read the guide ↗</span></a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-leaf">✳</div><div class="newsletter-copy"><div class="eyebrow eyebrow-light">A NOTE FROM THE GARDEN</div><h2>Grow your confidence,<br>one leaf at a time.</h2><p>Keep learning with practical tips for your little indoor jungle.</p></div><a class="button button-light" href="#guides">Explore the guides <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark"><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 36V18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M22 24C10 24 6 16 7 7c10 0 17 5 15 17Z" fill="currentColor"/><path d="M23 18C22 8 30 4 38 5c1 10-5 17-15 18Z" fill="currentColor"/><path d="M12 37h20l-2 4H14Z" fill="currentColor"/></svg></span><span class="brand-name">plantcare<span>hub</span><small>GROW WITH CONFIDENCE</small></span></a><p>Helping new plant parents grow with a little more confidence, one small step at a time.</p></div>
+      <div class="footer-col"><strong>EXPLORE</strong><a href="#finder">Find a plant</a><a href="#guides">Care guides</a><a href="#diagnosis">Plant problems</a><a href="#planner">Care planner</a></div>
+      <div class="footer-col"><strong>POPULAR GUIDES</strong><a href="#watering">Watering basics</a><a href="#light-guide">Light for houseplants</a><a href="#seasonal-guide">Seasonal care</a><a href="#plant-profiles">Plant profiles</a></div>
+      <div class="footer-col footer-note"><strong>GROW AT YOUR PACE</strong><p>There is no perfect plant parent. Just keep noticing, learning, and growing.</p><span>Made with care <span class="heart">♥</span></span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 PlantCare Hub · Student demo project</span><span>Made for plant people, especially the beginners.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
